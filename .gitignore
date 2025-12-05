@@ -34,3 +34,6 @@ amplify/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Archivos con credenciales sensibles
+CREDENCIALES-ADMIN.md
