@@ -37,3 +37,6 @@ next-env.d.ts
 
 # Archivos con credenciales sensibles
 CREDENCIALES-ADMIN.md
+
+# Cursor
+c_Users_Usuario_AppData_Roaming_Cursor_User_workspaceStorage_*

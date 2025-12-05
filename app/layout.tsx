@@ -1,8 +1,18 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Space_Grotesk, Syncopate } from 'next/font/google'
+import { WhatsAppButton } from '@/components/WhatsAppButton'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+})
+
+const syncopate = Syncopate({ 
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-syncopate',
+})
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -105,8 +115,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
-      <body className={inter.className}>{children}</body>
+    <html lang="es" className="scroll-smooth">
+      <body className={`${spaceGrotesk.variable} ${syncopate.variable} font-sans bg-[#0a0a0a] text-white overflow-x-hidden`}>
+        {children}
+        <WhatsAppButton />
+      </body>
     </html>
   )
 }

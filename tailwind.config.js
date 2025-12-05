@@ -7,7 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-space-grotesk)', 'sans-serif'],
+        heading: ['var(--font-syncopate)', 'sans-serif'],
+      },
       colors: {
+        background: '#0a0a0a',
         primary: {
           50: '#eff6ff',
           100: '#dbeafe',
